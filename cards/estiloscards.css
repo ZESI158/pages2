@@ -1,0 +1,82 @@
+@font-face {
+    font-family: titulo;
+    src: url(/Polaris.otf);
+}
+
+
+.contenedor-cards{
+    color: #181818;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    flex-direction: row;
+    height: 600px;
+    width: 100%;
+    margin: 10rem auto;
+}
+
+.caja{
+    font-size: 12px;
+    font-weight: 20px;
+    line-height: 2em;
+    position: relative;
+    height: 200px;
+    width: 200px;
+    color: #181818;
+    font-family:titulo;
+    background: #18181838;
+    -webkit-box-shadow: 14px 11px 13px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 11px 13px 3px rgba(0,0,0,0.75);
+    box-shadow: 14px 11px 13px 3px rgba(0,0,0,0.75);
+}
+
+ .contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+}
+.caja:hover{
+    translate: 70px 30px;
+    transition: ease-in 0.5s;
+    transform: scale(1.09);
+}
+.sub-caja{
+    position:absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.sub-caja:hover{
+    translate: -90px -40px;
+    transition: 0.5s ease-in;
+}
+
+.imagenes{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    -webkit-box-shadow: 21px 19px 28px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 21px 19px 28px -1px rgba(0,0,0,0.75);
+box-shadow: 21px 19px 28px -1px rgba(0,0,0,0.75);
+}
+
+.imagenes:hover{
+    transform: scale(1.0);
+    
+}
+
+
+@media (max-width:700px) {
+    .contenedor-cards{
+        border: 1px solid #181818;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+}
